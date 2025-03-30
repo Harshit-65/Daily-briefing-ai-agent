@@ -1,6 +1,6 @@
 # Daily Briefing Application
 
-A personalized daily briefing application that provides news, weather, and traffic updates through a web interface.
+A personalized daily briefing AI agent that provides news, weather, and traffic updates through a web interface.
 
 ![Daily Briefing Application](assets/briefing_interface.png)
 
@@ -18,8 +18,8 @@ A personalized daily briefing application that provides news, weather, and traff
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd daily-briefing
+git clone https://github.com/Harshit-65/Daily-briefing-ai-agent.git
+cd Daily-briefing-ai-agent
 ```
 
 2. Create and activate virtual environment:

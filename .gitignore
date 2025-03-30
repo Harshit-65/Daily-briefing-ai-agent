@@ -72,3 +72,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# Allow project images
+!assets/*.png
+!assets/*.jpg
+!assets/*.gif
