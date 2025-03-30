@@ -2,14 +2,14 @@
 
 A personalized daily briefing application that provides news, weather, and traffic updates through a web interface.
 
-![Daily Briefing Application](briefing_interface.png)
+![Daily Briefing Application](assets/briefing_interface.png)
 
 ## Prerequisites
 
 - Python 3.8 or higher
 - API keys for:
   - OpenAI
-  - ([PICA](https://www.picaos.com/))
+  - [PICA](https://www.picaos.com/)
   - ElevenLabs
   - Google Maps
 
