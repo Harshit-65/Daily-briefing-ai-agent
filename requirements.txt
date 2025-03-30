@@ -1,0 +1,9 @@
+langchain
+langchain_openai
+python-dotenv
+elevenlabs
+slack_sdk
+flask
+flask-cors
+requests
+pica_langchain

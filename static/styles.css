@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a2e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: #818cf8;
+}
+
+.date {
+  font-size: 1.1rem;
+  color: #9ca3af;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.briefing-container {
+  background-color: #242442;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.placeholder-text {
+  text-align: center;
+  font-style: italic;
+  color: #6b7280;
+  padding: 2rem;
+}
+
+.briefing-text {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.audio-player {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+audio {
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-button {
+  background-color: #818cf8;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #6366f1;
+}
+
+.primary-button:disabled {
+  background-color: #4b5563;
+  cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #9ca3af;
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  border: 4px solid rgba(129, 140, 248, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #818cf8;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loading {
+  text-align: center;
+  color: #9ca3af;
+}
+
+#error-message {
+  color: #ef4444;
+  text-align: center;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Summary</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-content">
+          <div class="title-section">
+            <div class="title-with-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+                />
+              </svg>
+              <h1>Your Daily Summary</h1>
+            </div>
+          </div>
+          <div id="current-date" class="date"></div>
+        </div>
+      </header>
+
+      <main>
+        <div class="briefing-container">
+          <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Generating your summary...</p>
+          </div>
+
+          <div id="briefing-content" class="hidden">
+            <div class="briefing-text"></div>
+            <div class="audio-player">
+              <audio id="briefing-audio" controls></audio>
+            </div>
+          </div>
+
+          <div id="placeholder-text" class="placeholder-text">
+            "Start each day with a positive thought and a grateful heart."
+          </div>
+
+          <div id="error-message" class="hidden">
+            <p>
+              Sorry, there was an error generating your summary. Please try
+              again.
+            </p>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button id="generate-briefing" class="primary-button">
+            Generate Summary
+          </button>
+        </div>
+      </main>
+
+      <footer>
+        <p>Powered by Pica & LangChain</p>
+      </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
