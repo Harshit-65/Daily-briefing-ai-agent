@@ -2,7 +2,7 @@
 
 A personalized daily briefing application that provides news, weather, and traffic updates through a web interface.
 
-![Daily Briefing Application](daily_briefing.png)
+![Daily Briefing Application](briefing_interface.png)
 
 ## Prerequisites
 
